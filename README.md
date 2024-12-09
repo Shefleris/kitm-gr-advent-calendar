@@ -35,4 +35,4 @@ Sukurti interaktyvų ir estetišką Advento kalendorių, skirtą kompiuteriui, t
 1. Mantas Sinkevičius - css stilius
 2. Kornelijus Katinas - kalendoriaus kortos
 3. Adrijus Čiurinskas - localStorage, patarimai
-4. Paulius Šefleris - github repozitorijos valdimas,
+4. Paulius Šefleris - github repozitorijos valdimas, state management
