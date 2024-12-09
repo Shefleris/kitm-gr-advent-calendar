@@ -1,30 +1,33 @@
-import { useState } from "react"
+//global context irasyti
 
 const Cards = () =>{
-    //const {setFlip, flip, cardIcon, tips} = useGlobalContext();
-    const [flip, setFlip] = useState(false)
-    const [tips, setTips] = useState(["hie","hi","hi","hies","hi","hi","hi","hi","hi"]);
+    // state tai bus is local storage data, galima turbut, kad rasytusi tik tips, bet tada manau reik reduceryje apdoroti
+    // reduceri flipstate reikia flipState padaryti, 
+    const [state, dispatch] = userGlobalContext();  
+    const handleFlip = (index) => {
+        dispatch({type:"FLIP_CARD", payload: index});
+    };
         return(
             <section className="cards">
-                {tips.map((card)=>{
+                {state.tips.map((card, index)=>{
+                    const {day,tip} = card
                     return(
-                        <div className={`card ${flip ? "flip" : "" }`}>
-                            <div className="front" onClick={()=>setFlip(!flip)}>                       
+                        <div key={day} className={`card ${state.flipStates[index] ? "flip" : "" }`}>
+                            <div className="front" onClick={()=> handleFlip(index)}>                       
                                 <div className="cardNumber">
-                                    <p>1</p>
+                                    <p>{day}</p>
                                 </div>
                                 <div className="cardIcon">
                                     <span>icon</span>
                                 </div>
                             </div>
-                            <div className="back" onClick={()=> setFlip(!flip)}>
-                                <p>{card}</p>
+                            <div className="back" onClick={()=> handleFlip(index)}>
+                                <p>{tip}</p>
                             </div>
                         </div>                      
                     )
                 })}
             </section>
-        )
-    
+        )   
 }
 export default Cards
