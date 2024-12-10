@@ -1,18 +1,16 @@
-//global context irasyti
+import { useGlobalContext } from "../../context/Context";
 
 const Cards = () =>{
     // state tai bus is local storage data, galima turbut, kad rasytusi tik tips, bet tada manau reik reduceryje apdoroti
     // reduceri flipstate reikia flipState padaryti, 
-    const [state, dispatch] = userGlobalContext();  
-    const handleFlip = (index) => {
-        dispatch({type:"FLIP_CARD", payload: index});
-    };
+    const {tips, flipStates, handleFlip} = useGlobalContext();  
+
         return(
             <section className="cards">
-                {state.tips.map((card, index)=>{
+                {tips.map((card, index)=>{
                     const {day,tip} = card
                     return(
-                        <div key={day} className={`card ${state.flipStates[index] ? "flip" : "" }`}>
+                        <div key={day} className={`card ${flipStates[index] ? "flip" : "" }`}>
                             <div className="front" onClick={()=> handleFlip(index)}>                       
                                 <div className="cardNumber">
                                     <p>{day}</p>
