@@ -1,0 +1,43 @@
+@import "./variables";
+main {
+    padding: 40px 20px;
+  
+    .calendar-box {
+      background-color: rgba(255, 255, 255, 0.9); 
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding-top: 100%;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+      .day-number {
+        position: absolute;
+        top: 20%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $light-primary-color;
+      }
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-color: $box-hover-color-light;
+      }
+  
+      &.dark-mode {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+  
+        .day-number {
+          color: $dark-primary-color;
+        }
+  
+        &:hover {
+          background-color: $box-hover-color-dark;
+        }
+      }
+    }
+  }
+  
