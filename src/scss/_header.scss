@@ -1,0 +1,38 @@
+@import "./variables";
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8); // Light mode
+    color: $light-primary-color;
+    padding: 20px;
+  
+    &.dark-mode {
+      background-color: rgba(0, 0, 0, 0.8); // Dark mode
+      color: $dark-primary-color;
+    }
+  
+    button#darkModeToggle {
+      border: 2px solid $light-primary-color;
+      background: none;
+      color: $light-primary-color;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background-color: $light-primary-color;
+        color: $light-bg-color;
+      }
+  
+      &.dark-mode {
+        border-color: $dark-primary-color;
+        color: $dark-primary-color;
+  
+        &:hover {
+          background-color: $dark-primary-color;
+          color: $dark-bg-color;
+        }
+      }
+    }
+  }
+  
