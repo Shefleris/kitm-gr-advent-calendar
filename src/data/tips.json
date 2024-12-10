@@ -1,0 +1,28 @@
+{
+    "tips": [
+      { "day": 1, "tip": "Start your day by planning your tasks." },
+      { "day": 2, "tip": "Write modular and reusable code." },
+      { "day": 3, "tip": "Test your code regularly to catch bugs early." },
+      { "day": 4, "tip": "Break complex problems into smaller, manageable parts." },
+      { "day": 5, "tip": "Document your code for better collaboration." },
+      { "day": 6, "tip": "Keep your Git commits small and descriptive." },
+      { "day": 7, "tip": "Review your previous day’s work to spot improvements." },
+      { "day": 8, "tip": "Use meaningful variable and function names." },
+      { "day": 9, "tip": "Take regular breaks to stay productive." },
+      { "day": 10, "tip": "Explore new tools and libraries to improve your workflow." },
+      { "day": 11, "tip": "Practice debugging techniques to solve issues faster." },
+      { "day": 12, "tip": "Set realistic goals for each day of development." },
+      { "day": 13, "tip": "Avoid over-engineering—keep it simple." },
+      { "day": 14, "tip": "Stay consistent with your code style and formatting." },
+      { "day": 15, "tip": "Ask for help when you’re stuck—teamwork is key." },
+      { "day": 16, "tip": "Use comments to clarify complex logic." },
+      { "day": 17, "tip": "Learn from past mistakes to improve your process." },
+      { "day": 18, "tip": "Refactor code for better readability and efficiency." },
+      { "day": 19, "tip": "Celebrate small wins to stay motivated." },
+      { "day": 20, "tip": "Test your application on different devices and browsers." },
+      { "day": 21, "tip": "Stay up-to-date with new features in your tech stack." },
+      { "day": 22, "tip": "Focus on one task at a time to avoid distractions." },
+      { "day": 23, "tip": "Take feedback positively and make improvements." },
+      { "day": 24, "tip": "It’s Christmas Eve, take a break and spend time with your family :)." }
+    ]
+  }
