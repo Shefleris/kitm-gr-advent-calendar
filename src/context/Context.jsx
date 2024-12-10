@@ -3,29 +3,12 @@ import { useReducer } from "react";
 import { useContext } from "react";
 import { HANDLE_FLIP, WARNING } from "../actions/actions";
 import React from "react";
+import data from "../data/tips.json"
 
-const tempData = [
-        {day:1, tip: 'this is a test'},
-        {day:2, tip: 'this is a second test'},
-        {day:3, tip: 'this is a test'},
-        {day:4, tip: 'this is a second test'},
-        {day:5, tip: 'this is a test'},
-        {day:6, tip: 'this is a second test'},
-        {day:7, tip: 'this is a test'},
-        {day:8, tip: 'this is a second test'},
-        {day:9, tip: 'this is a test'},
-        {day:10, tip: 'this is a second test'},
-        {day:11, tip: 'this is a test'},
-        {day:12, tip: 'this is a second test'},
-        {day:13, tip: 'this is a test'},
-        {day:14, tip: 'this is a second test'},
-    ]
 const initialState = {
-    tips: tempData,
-    flipStates: tempData.map(()=>false)
+    tips: data.tips,
+    flipStates: data.tips.map(()=>false)
 }
-
-console.log(initialState)
 
 const AppContext = React.createContext(null)
 
@@ -33,6 +16,7 @@ const AppProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     const handleFlip = (index)=>{
+        console.log(state)
         const today = new Date();
         const currentDay = today.getDate()
         if (index <= currentDay){
