@@ -21,7 +21,7 @@ const AppProvider = ({ children }) => {
     const today = new Date();
     const currentDay = today.getDate();
 
-    if (index <= currentDay) {
+    if (index < currentDay) {
       dispatch({ type: HANDLE_FLIP, payload: index });
     } else {
       dispatch({ type: WARNING });
