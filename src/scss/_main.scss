@@ -1,5 +1,12 @@
 @import "./variables";
 main {
+  .icon{
+    height:100px;
+    filter: invert(54%) sepia(14%) saturate(10%) hue-rotate(320deg) brightness(97%) contrast(91%);
+    &.dark-mode {
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(359deg) brightness(105%) contrast(101%);
+    }
+  }
   padding: 40px 20px;
   .card {
       background-color: rgba(255, 255, 255, 0.9);
@@ -47,7 +54,7 @@ main {
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       transition: transform 0.6s ease-in-out; 
       &.dark-mode {
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.8); 
         border: 1px solid rgba(200, 255, 255, 0.2);
         &:hover {
             background-color: rgba(20, 20, 20, 0.9);
@@ -76,8 +83,8 @@ main {
   }
   .card-icon{
     position: absolute;
-    top: 80%;
-    left: 20%;
+    top: 70%;
+    left: 30%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
     font-weight: bold;
