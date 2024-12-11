@@ -3,7 +3,7 @@
 @import './footer';
 @import './main';
 
-body {
+.body {
     background-image: $light-bg-image; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body {
     }
   }
   
-  body::before {
+body::before {
     content: '';
     position: fixed;
     top: 0;
