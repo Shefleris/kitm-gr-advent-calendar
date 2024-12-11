@@ -14,18 +14,20 @@ const Header = () => {
     // }
   return (
     <header className={`header text-center py-4 ${themeState === "dark-mode" ? "dark-mode" : "" }`}>
-      <div className="container d-flex justify-content-between align-items-center">
-        <h1 className="m-0">Welcome to the 2024 Advantage Christmas Advent Calendar!</h1>
+      <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
+        <div class="text-content">
+        <h1 className="m-0 mb-3">Welcome to the 2024 Advantage Christmas Advent Calendar!</h1>
+        <p className="lead mb-4">Open a door each day and you could win a fantastic prize from one of our business partners. Good luck!</p>
+        </div>
         <button
           id="darkModeToggle"
-          className= {`btn ${themeState === "light-mode" ? "btn-outline-dark" : "btn-outline-light" }`}
+          className= {`btn ${themeState === "light-mode" ? "btn-outline-dark" : "btn-outline-light" } mx-2`}
           type="button"
           onClick={handleTheme}
         >
           {`${themeState === "light-mode" ? "Enable Dark Mode" : "Enable Light Mode"}`}
         </button>
       </div>
-      <p className="lead">Open a door each day and you could win a fantastic prize from one of our business partners. Good luck!</p>
     </header>
   )
 }
