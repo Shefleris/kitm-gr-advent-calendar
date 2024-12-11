@@ -1,4 +1,4 @@
-import { HANDLE_FLIP, WARNING } from "../actions/actions";
+import { HANDLE_FLIP, WARNING, HANDLE_THEME } from "../actions/actions";
 
 const reducer = (state, action) => {
   switch (action.type) {
@@ -16,6 +16,13 @@ const reducer = (state, action) => {
     case WARNING:
       alert("You cannot view this advent day yet");
       return state;
+
+    case HANDLE_THEME:
+        const updatedTheme = state.themeState === 'light-mode' ? 'dark-mode' : 'light-mode'
+        return {
+          ...state,
+          themeState:updatedTheme
+        }
 
     default:
       throw new Error(`No matching "${action.type}" action type`);

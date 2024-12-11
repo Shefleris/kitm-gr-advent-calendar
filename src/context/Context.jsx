@@ -1,6 +1,6 @@
 import React, { createContext, useReducer, useContext, useEffect } from "react";
 import reducer from "../reducers/reducer";
-import { HANDLE_FLIP, WARNING } from "../actions/actions";
+import { HANDLE_FLIP, WARNING, HANDLE_THEME } from "../actions/actions";
 import data from "../data/tips.json";
 
 // Uzloadina tipsus jei yra data
@@ -10,6 +10,7 @@ const storedFlipStates = JSON.parse(localStorage.getItem("flipStates"));
 const initialState = {
   tips: storedTips || data.tips,
   flipStates: storedFlipStates || data.tips.map(() => false),
+  themeState: 'light-mode'
 };
 
 const AppContext = createContext(null);
@@ -28,6 +29,10 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  const handleTheme = () => {
+    dispatch({type: HANDLE_THEME})
+  }
+
   //Issaugo tipsus i local storage
   useEffect(() => {
     localStorage.setItem("tips", JSON.stringify(state.tips));
@@ -35,7 +40,7 @@ const AppProvider = ({ children }) => {
   }, [state.tips, state.flipStates]);
 
   return (
-    <AppContext.Provider value={{ ...state, handleFlip }}>
+    <AppContext.Provider value={{ ...state, handleFlip, handleTheme }}>
       {children}
     </AppContext.Provider>
   );
