@@ -1,5 +1,4 @@
 import { useGlobalContext } from "../../context/Context";
-import getIcon from "../../helpers/getIcon.jsx";
 import Card from "../card/Card";
 import Icons from "../icons/icons.jsx";
 import {useState, useEffect } from "react";
