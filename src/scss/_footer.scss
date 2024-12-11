@@ -8,6 +8,12 @@
       background-color: rgba(0, 0, 0, 0.8);
       color: $dark-text-color;
     }
+
+    .footer-logo {
+      width: 150px;
+      height: auto;
+      margin-bottom: 10px; 
+    }
   
     a {
       color: $light-primary-color;
