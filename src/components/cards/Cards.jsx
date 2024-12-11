@@ -1,5 +1,5 @@
 import { useGlobalContext } from "../../context/Context";
-import getIcon from "../../helpers/getIcon";
+import getIcon from "../../helpers/getIcon.jsx";
 import Card from "../card/Card";
 const Cards = () =>{
     const {tips, flipStates, handleFlip} = useGlobalContext();  
@@ -8,7 +8,7 @@ const Cards = () =>{
                 {tips.map((card, index)=>{
                     const {day,tip} = card
                     return(
-                        <div key={day} className="col-4 col-md-2">
+                        <div key={day} className="col-6 col-md-4 col-lg-3 col-xl-2">
                             <Card day={day} tip={tip} flipStates={flipStates} index={index} handleFlip={handleFlip} icon={getIcon(day)}></Card>
                         </div>
                     )
