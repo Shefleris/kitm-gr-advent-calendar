@@ -6,11 +6,12 @@ import data from "../data/tips.json";
 // Uzloadina tipsus jei yra data
 const storedTips = JSON.parse(localStorage.getItem("tips"));
 const storedFlipStates = JSON.parse(localStorage.getItem("flipStates"));
+const storedTheme = JSON.parse(localStorage.getItem("themeState"));
 
 const initialState = {
   tips: storedTips || data.tips,
   flipStates: storedFlipStates || data.tips.map(() => false),
-  themeState: 'light-mode'
+  themeState: storedTheme || 'light-mode'
 };
 
 const AppContext = createContext(null);
@@ -37,7 +38,8 @@ const AppProvider = ({ children }) => {
   useEffect(() => {
     localStorage.setItem("tips", JSON.stringify(state.tips));
     localStorage.setItem("flipStates", JSON.stringify(state.flipStates));
-  }, [state.tips, state.flipStates]);
+    localStorage.setItem("themeState", JSON.stringify(state.themeState))
+  }, [state.tips, state.flipStates, state.themeState]);
 
   return (
     <AppContext.Provider value={{ ...state, handleFlip, handleTheme }}>
