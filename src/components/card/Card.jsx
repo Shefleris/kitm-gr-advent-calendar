@@ -1,4 +1,4 @@
-const Card = ({day,tip, flipStates, index, handleFlip}) =>{
+const Card = ({day,tip, flipStates, index, handleFlip, icon}) =>{
     return(
             <div  className={`card ${flipStates[index] ? "flip" : "" }`}>
                 <div className="front" onClick={()=> handleFlip(index)}>                       
@@ -6,7 +6,7 @@ const Card = ({day,tip, flipStates, index, handleFlip}) =>{
                         <p>{day}</p>
                     </div>
                     <div className="card-icon">
-                        <span>icon</span>
+                        <span>{icon}</span>
                     </div>
                 </div>
                 <div className="back" onClick={()=> handleFlip(index)}>
