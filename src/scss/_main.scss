@@ -24,6 +24,7 @@ main {
       &.dark-mode {
         background-color: rgba(0, 0, 0, 0.8);
         border: 1px solid rgba(200, 255, 255, 0.2);
+        color: $dark-secondary-color;;
         &:hover {
             background-color: rgba(20, 20, 20, 0.9); 
         }

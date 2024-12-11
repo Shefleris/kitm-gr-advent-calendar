@@ -1,6 +1,9 @@
+import { useGlobalContext } from "../../context/Context";
+
 const Footer = () => {
+    const {themeState} = useGlobalContext()
     return (
-        <footer className="footer text-center py-3 d-flex justify-content-evenly align-items-center">
+        <footer className={`footer text-center py-3 d-flex justify-content-evenly align-items-center ${themeState === "dark-mode" ? "dark-mode" : "" }`}>
             <p className="mb-0">© 2024 Advantage Travel</p>
             <a href="#" className="link"><i className="fa-solid fa-computer"></i>www.advantagemembers.com</a>
             <div className="social-icons d-flex gap-3">
