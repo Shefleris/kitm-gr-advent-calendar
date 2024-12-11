@@ -6,11 +6,11 @@ const Card = ({day,tip, flipStates, index, handleFlip, icon}) =>{
                         <p>{day}</p>
                     </div>
                     <div className="card-icon">
-                        <span>{icon}</span>
+                        <div className='icon'>{icon}</div>
                     </div>
                 </div>
                 <div className="back" onClick={()=> handleFlip(index)}>
-                    <p>{tip}</p>
+                    <p className='text-center'>{tip}</p>
                 </div>
             </div>             
     )
