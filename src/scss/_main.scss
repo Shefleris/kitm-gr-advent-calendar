@@ -9,8 +9,8 @@ main {
   }
   padding: 40px 20px;
   .card {
-      background-color: rgba(255, 255, 255, 0.9);
-      border: 1px solid rgba(0, 0, 0, 0.1);
+      background-color: $light-card-bg;
+      border: 1px solid $light-card-border;
       border-radius: 8px;
       padding-top: 100%;
       position: relative;
@@ -18,25 +18,25 @@ main {
       transition: transform 0.6s ease-in-out, box-shadow 0.3s ease; 
       &:hover {
           transform: scale(1.05); 
-          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
-          background-color: rgba(240, 240, 240, 0.9); 
+          box-shadow: 0 8px 16px $light-box-shadow; 
+          background-color: $light-card-hover-bg; 
       }
       &.dark-mode {
-        background-color: rgba(0, 0, 0, 0.8);
-        border: 1px solid rgba(200, 255, 255, 0.2);
+        background-color: $dark-hf-card-bg;
+        border: 1px solid $dark-card-border;
         color: $dark-secondary-color;;
         &:hover {
-            background-color: rgba(20, 20, 20, 0.9); 
+            background-color: $dark-card-hover-bg; 
         }
     }
   }
   .card.flip {
       transform: rotateY(180deg); 
       &.dark-mode {
-        background-color: rgba(0, 0, 0, 0.8);
-        border: 1px solid rgba(200, 255, 255, 0.2);
+        background-color: $dark-hf-card-bg;
+        border: 1px solid $dark-card-border;
         &:hover {
-            background-color: rgba(20, 20, 20, 0.9);
+            background-color: $dark-card-hover-bg;
         }
     }
   }
@@ -52,13 +52,13 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 6px $light-box-shadow;
       transition: transform 0.6s ease-in-out; 
       &.dark-mode {
-        background-color: rgba(0, 0, 0, 0.8); 
-        border: 1px solid rgba(200, 255, 255, 0.2);
+        background-color: $dark-hf-card-bg;
+        border: 1px solid $dark-card-border;
         &:hover {
-            background-color: rgba(20, 20, 20, 0.9);
+            background-color: $dark-card-hover-bg;
         }
     }
   }
