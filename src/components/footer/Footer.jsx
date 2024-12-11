@@ -1,10 +1,11 @@
 import { useGlobalContext } from "../../context/Context";
+import advantageTravelLogo from "../../assets/img/advantage_travel.png";
 
 const Footer = () => {
     const {themeState} = useGlobalContext()
   return (
     <footer className={`footer py-3 d-flex flex-column flex-lg-row justify-content-evenly align-items-center ${themeState === "dark-mode" ? "dark-mode" : "" }`}>
-        <img src="/src/img/advantage_travel.png" alt="Logo" className="footer-logo" />
+        <img src={advantageTravelLogo} alt="Advantage-travel" className="footer-logo" />
         <a href="#" className="link">
           <i className="fa-solid fa-computer"></i>www.advantagemembers.com
         </a>
