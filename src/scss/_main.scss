@@ -60,7 +60,13 @@ main {
         &:hover {
             background-color: $dark-card-hover-bg;
         }
-    }
+     }
+     p{
+      padding: 20px;
+      margin-bottom:0px;
+      width:100%;
+      font-size: 1rem;
+     }
   }
   .front {
       z-index: 2; 
