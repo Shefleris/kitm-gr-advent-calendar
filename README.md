@@ -36,3 +36,17 @@ Sukurti interaktyvų ir estetišką Advento kalendorių, skirtą kompiuteriui, t
 2. Kornelijus Katinas - kalendoriaus kortos
 3. Adrijus Čiurinskas - localStorage, patarimai
 4. Paulius Šefleris - github repozitorijos valdimas, state management
+
+## Paleista puslapi galima rasti čia
+[Advento kalendoriaus puslapis](https://github.com/Shefleris/241209-group)
+
+
+#### Jeigu neveikia galite localhost:
+Reikalingos programos:
+- git
+- npm (node package manager)
+
+#### Žingsniai:
+- git clone https://github.com/Shefleris/241209-group.git
+- npm install
+- npx vite
