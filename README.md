@@ -38,7 +38,7 @@ Sukurti interaktyvų ir estetišką Advento kalendorių, skirtą kompiuteriui, t
 4. Paulius Šefleris - github repozitorijos valdimas, state management
 
 ## Paleista puslapi galima rasti čia
-[Advento kalendoriaus puslapis](https://github.com/Shefleris/241209-group)
+[Advento kalendoriaus puslapis](https://shefleris.github.io/241209-group/)
 
 
 #### Jeigu neveikia galite localhost:
