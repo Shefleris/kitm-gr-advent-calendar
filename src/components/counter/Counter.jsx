@@ -6,7 +6,7 @@ const Counter = () =>{
     const filtered = flipStates.filter((state) => state === true);
     const countFlipped = filtered.length
     return (
-       <p>Advento dienu atidaryta: {countFlipped}/{countTotal}</p>
+       <p>Advent days opened: {countFlipped}/{countTotal}</p>
     )
 }   
 
