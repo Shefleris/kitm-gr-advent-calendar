@@ -4,7 +4,13 @@ $light-bg-color: #fdfdfb;
 $light-text-color: #1a1a1a; 
 $light-primary-color: #d32f2f; 
 $light-secondary-color: #388e3c; 
-$box-hover-color-light: #f8d7da; 
+$box-hover-color-light: #f8d7da;
+$light-hf-bg: rgba(255, 255, 255, 0.8);
+$light-card-bg: rgba(255, 255, 255, 0.9);
+$light-card-border: rgba(0, 0, 0, 0.1);
+$light-card-hover-bg: rgba(240, 240, 240, 0.9);
+$light-box-shadow: rgba(0, 0, 0, 0.2);
+$body-overlay: rgba(0, 0, 0, 0.5);
 
 // Dark Mode Variables
 $dark-bg-image: url('../assets/img/darkchristmas.webp'); 
@@ -12,4 +18,12 @@ $dark-bg-color: #121212;
 $dark-text-color: #f8f9fa; 
 $dark-primary-color: #e53935; 
 $dark-secondary-color: #dd5d5b; 
-$box-hover-color-dark: #2e2e2e; 
+$box-hover-color-dark: #2e2e2e;
+$dark-hf-card-bg: rgba(0, 0, 0, 0.8);
+$dark-card-border: rgba(200, 255, 255, 0.2);
+$dark-card-hover-bg: rgba(20, 20, 20, 0.9);
+$dark-box-shadow: rgba(0, 0, 0, 0.1);
+
+
+
+

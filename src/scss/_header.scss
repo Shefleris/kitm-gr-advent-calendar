@@ -1,12 +1,12 @@
 @import "./variables";
 
 .header {
-    background-color: rgba(255, 255, 255, 0.8); // Light mode
+    background-color: $light-hf-bg; // Light mode
     color: $light-primary-color;
     padding: 20px;
   
     &.dark-mode {
-      background-color: rgba(0, 0, 0, 0.8); // Dark mode
+      background-color: $dark-hf-card-bg; // Dark mode
       color: $dark-primary-color;
     }
 

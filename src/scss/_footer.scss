@@ -1,11 +1,11 @@
 @import "./variables";
 .footer {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: $light-hf-bg;
     color: $light-text-color;
     padding: 20px;
   
     &.dark-mode {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: $dark-hf-card-bg;
       color: $dark-text-color;
     }
 
