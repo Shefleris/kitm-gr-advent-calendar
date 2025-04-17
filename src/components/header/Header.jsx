@@ -2,17 +2,7 @@ import { useGlobalContext } from "../../context/Context";
 import Counter from "../counter/Counter";
 
 const Header = () => {
-  const {themeState, handleTheme} = useGlobalContext();      
-    // const toggleTheme = () => {
-    //   const body = document.body;
-    //   const isDarkMode = body.classList.contains("dark-mode");
-
-    //   // Toggle light and dark mode
-    //   body.classList.toggle("dark-mode", !isDarkMode);
-    //   body.classList.toggle("light-mode", isDarkMode);
-
-
-    // }
+  const {themeState, handleTheme} = useGlobalContext();
   return (
     <header className={`header text-center py-4 ${themeState === "dark-mode" ? "dark-mode" : "" }`}>
       <div className="container d-flex flex-column flex-md-row justify-content-around align-items-center">
