@@ -38,7 +38,7 @@ Sukurti interaktyvų ir estetišką Advento kalendorių, skirtą kompiuteriui, t
 4. Paulius Šefleris - github repozitorijos valdimas, state management
 
 ## Paleista puslapi galima rasti čia
-[Advento kalendoriaus puslapis](https://shefleris.github.io/241209-group/)
+[Advento kalendoriaus puslapis](https://shefleris.github.io/kitm-gr-advent-calendar/)
 
 
 #### Jeigu neveikia galite localhost:
@@ -47,6 +47,6 @@ Reikalingos programos:
 - npm (node package manager)
 
 #### Žingsniai:
-- git clone https://github.com/Shefleris/241209-group.git
+- git clone [https://github.com/Shefleris/kitm-gr-advent-calendar](https://github.com/Shefleris/kitm-gr-advent-calendar.git)
 - npm install
 - npx vite
